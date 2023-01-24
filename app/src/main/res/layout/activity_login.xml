@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/blue_bg1"
+    android:padding="30dp">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+<ImageView
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="47sp"
+            android:textStyle="bold">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="REGISTERED MOBILE NO."
+            app:hintTextColor="@android:color/white"
+            app:boxStrokeColor="@color/color_primary_dark"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/phone_24"
+            app:startIconTint="@color/white"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            android:layout_marginTop="30dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_mob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:background="@color/color_primary_dark"
+            android:text="Get OTP">
+        </Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="VALID OTP"
+            app:hintTextColor="@color/white"
+            app:boxStrokeColor="@color/color_primary_dark"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconDrawable="@drawable/code_24"
+            app:startIconTint="@color/white"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+           >
+
+            <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textCursorDrawable="@drawable/color_cursor"                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@color/color_primary_dark"
+                android:text="LOGIN" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/cancel"-->
+            <!--                android:layout_width="120dp"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:background="@drawable/btn_bg"-->
+            <!--                android:text="CANCEL" />-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_job"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="4dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/service_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PinCode"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="product name"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/product_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="product_code"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/model_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="model name"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/call_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="call_date"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/appointment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="appointment_date"
+            android:padding="1dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:padding="1dp"
+            android:textColor="@color/UIBlue2"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
